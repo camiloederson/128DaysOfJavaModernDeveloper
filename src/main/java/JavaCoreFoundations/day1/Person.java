@@ -1,4 +1,4 @@
-package JavaCoreFoundations;
+package JavaCoreFoundations.day1;
 
 import java.util.Objects;
 

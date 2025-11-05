@@ -1,4 +1,4 @@
-package JavaCoreFoundations;
+package JavaCoreFoundations.day1;
 
 public class EqualsHashCodePractice {
     public static void main(String[] args){
