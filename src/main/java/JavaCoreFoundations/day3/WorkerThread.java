@@ -5,7 +5,7 @@ public class WorkerThread implements Runnable {
     private String name;
 
     WorkerThread(String name){
-        this.name = name;
+        name = this.name;
     }
 
     @Override
