@@ -2,7 +2,7 @@ package JavaCoreFoundations.day3;
 
 import java.util.Scanner;
 
-public class StringChallenges {
+public class VowelCounter {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.println("🔢Type the word you want to test: ");
