@@ -60,11 +60,22 @@ public class Song {
     @Override
     public boolean equals(Object o) {
         if (!(o instanceof Song song)) return false;
-        return id == song.id && duration == song.duration && Objects.equals(title, song.title) && Objects.equals(artist, song.artist) && Objects.equals(genre, song.genre);
+        return Objects.equals(title, song.title) && Objects.equals(artist, song.artist);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, title, artist, genre, duration);
+        return Objects.hash(title, artist);
+    }
+
+    @Override
+    public String toString() {
+        return "Song{" +
+                "\n 🔢id= \t" + id +
+                ",\n 🆎 title= \t" + title  +
+                ", \n 🤠 artist= \t" + artist +
+                ", \n ✍️ genre= \t" + genre +
+                ", \n ⏱️ duration= \t" + duration +
+                '}';
     }
 }
