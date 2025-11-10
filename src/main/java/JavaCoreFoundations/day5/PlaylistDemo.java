@@ -1,11 +1,13 @@
 package JavaCoreFoundations.day5;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class PlaylistDemo {
     public static void main(String[] args) {
-        Set<Song> songs = new HashSet<>();
+        Set<Song> songs = new TreeSet<>();
 
         PlaylistManager playlistManager = new PlaylistManager(songs);
 

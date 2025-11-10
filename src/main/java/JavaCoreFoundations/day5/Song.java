@@ -2,7 +2,7 @@ package JavaCoreFoundations.day5;
 
 import java.util.Objects;
 
-public class Song {
+public class Song implements Comparable<Song> {
     private long id;
     private String title;
     private String artist;
@@ -77,5 +77,23 @@ public class Song {
                 ", \n ✍️ genre= \t" + genre +
                 ", \n ⏱️ duration= \t" + duration +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Song song) {
+        // stores in result
+            // 0 if are equals
+            // 1 if the title passed as a parameter goes after alphabetically
+            // -1 if the title passed as a parameter goes before alphabetically
+        int result = this.title.compareTo(song.title);
+        // if the result is different from zero, doesnt enter to the if and...
+        if(result == 0){
+            // 0 if are equals
+            // 1 if this.artist name goes after alphabetically
+            // -1 if this.artist name goes before alphabetically
+            result = this.artist.compareTo((song.artist));
+        }
+        // ... returns 0, - 1 or 1
+        return result;
     }
 }
