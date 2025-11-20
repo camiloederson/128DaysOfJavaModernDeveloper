@@ -12,5 +12,6 @@ public class StreamMethodsDemo {
         names.add("Fernanda");
 
         System.out.println(names.stream().filter( (name) -> name.startsWith("C")).toList());
+        System.out.println(names.stream().map(String::toUpperCase).toList());
     }
 }
