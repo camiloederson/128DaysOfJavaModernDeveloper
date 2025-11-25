@@ -18,8 +18,7 @@ public class SortedDemo {
 
         List<Integer> randomList = list.get();
         System.out.println("Random list: " + randomList);
-        System.out.println("Sorted list " + list.get().stream().sorted().toList());
-
+        System.out.println("Sorted list " + randomList.stream().distinct().sorted().toList());
     }
 
 }
