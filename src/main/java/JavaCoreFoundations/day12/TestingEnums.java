@@ -8,5 +8,9 @@ public class TestingEnums {
 
         BasicEnum currentStatus = BasicEnum.ACTIVE;
         System.out.println("🆎 The current status is: " + currentStatus);
+
+        EnumExample isRegistered = EnumExample.NON_REGISTERED;
+        System.out.println("🔎 CURRENT STATUS");
+        System.out.println(isRegistered.isUnRegistered() ? "❌ Non registered" : " ✅ Registered");
     }
 }

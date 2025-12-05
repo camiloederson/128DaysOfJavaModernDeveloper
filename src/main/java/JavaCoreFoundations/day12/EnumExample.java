@@ -11,6 +11,14 @@ public enum EnumExample {
         this.description = description;
     }
 
+    public boolean isActive(){
+        return this == ACTIVE;
+    }
+
+    public boolean isUnRegistered(){
+        return this == NON_REGISTERED;
+    }
+
     public String getDescription() {
         return description;
     }
