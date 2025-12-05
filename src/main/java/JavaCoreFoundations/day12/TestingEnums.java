@@ -9,8 +9,10 @@ public class TestingEnums {
         BasicEnum currentStatus = BasicEnum.ACTIVE;
         System.out.println("🆎 The current status is: " + currentStatus);
 
-        EnumExample isRegistered = EnumExample.NON_REGISTERED;
+        EnumExample user = EnumExample.NON_REGISTERED;
+        System.out.println("🥾 WELCOME TO THE SYSTEM");
         System.out.println("🔎 CURRENT STATUS");
-        System.out.println(isRegistered.isUnRegistered() ? "❌ Non registered" : " ✅ Registered");
+        System.out.println(user.isUnRegistered() ? "❌ Not registered" : " ✅ Registered");
+        System.out.println(user.canLogin() ? "📋 You can login the site" : "❌ I'm sorry you need to be registered to enter");
     }
 }

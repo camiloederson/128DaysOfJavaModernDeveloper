@@ -1,9 +1,24 @@
 package JavaCoreFoundations.day12;
 
 public enum EnumExample {
-    ACTIVE("user currently working on"),
-    NON_ACTIVE ("User currently not working on"),
-    NON_REGISTERED("User never registered");
+    ACTIVE("User active"){
+        @Override
+        public boolean canLogin(){
+            return true;
+        }
+    },
+    NON_ACTIVE ("User not active"){
+        @Override
+        public boolean canLogin(){
+            return true;
+        }
+    },
+    NON_REGISTERED("User never registered"){
+        @Override
+        public boolean canLogin(){
+            return false;
+        }
+    };
 
     private String description;
 
@@ -22,4 +37,6 @@ public enum EnumExample {
     public String getDescription() {
         return description;
     }
+
+    public abstract boolean canLogin();
 }
