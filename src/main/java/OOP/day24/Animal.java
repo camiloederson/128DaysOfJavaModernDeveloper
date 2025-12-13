@@ -8,4 +8,13 @@ public abstract class Animal {
     }
 
     public abstract void makeSound();
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        if (name == null || name.isEmpty() || name.isBlank()) throw new IllegalArgumentException();
+        this.name = name;
+    }
 }
