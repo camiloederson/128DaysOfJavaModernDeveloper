@@ -1,12 +1,16 @@
 package OOP.day28;
 
-public class Tambourine  implements MusicalInstrument{
+public class Guitar implements MusicalInstrument, Tunable {
 
     int volume;
 
+    public Guitar(int volume) {
+        this.volume = volume;
+    }
+
     @Override
     public void makeSound() {
-        System.out.println("Tss");
+        System.out.println("Plimmm");
     }
 
     @Override
@@ -22,5 +26,10 @@ public class Tambourine  implements MusicalInstrument{
     @Override
     public int turnDown() {
         return volume - 2;
+    }
+
+    @Override
+    public void tune() {
+        System.out.println("Let's tune tune the guitar");
     }
 }

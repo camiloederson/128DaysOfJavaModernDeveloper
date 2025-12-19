@@ -5,5 +5,4 @@ public interface MusicalInstrument {
     public boolean isSounding();
     public int turnUp();
     public int turnDown();
-    public void tune();
 }
