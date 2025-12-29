@@ -18,3 +18,19 @@ inner join orderdetails od
     on o.OrderID = od.OrderID
 inner join Products p
     ON od.ProductID = p.ProductID
+
+SELECT c.CustomerName, o.OrderID
+FROM Orders o
+         INNER JOIN Customers c
+                    ON o.CustomerID = c.CustomerID
+
+SELECT c.CustomerName, c.Country, o.OrderID
+FROM Orders o
+         INNER JOIN Customers c
+                    ON o.CustomerID = c.CustomerID
+WHERE c.Country = 'Germany'
+
+SELECT p.ProductName, od.OrderID
+FROM Products p
+         INNER JOIN OrderDetails od
+                    ON p.ProductID = od.ProductID
